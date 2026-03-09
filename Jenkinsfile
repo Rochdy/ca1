@@ -16,7 +16,7 @@ pipeline {
         
         stage('Code-Analysis') {
             steps {
-                withSonarQubeEnv('SonarCloud') {
+                withSonarQubeEnv('SONARCLOUD') {
                     sh '''$SCANNER_HOME/bin/sonar-scanner \
   -Dsonar.organization=memememe \
   -Dsonar.projectKey=memememe_cijenk \
